@@ -21,20 +21,36 @@ body{
     font-family: 'WorkSans';
 }
 
-h1{
 
+#banner {
+    display: block;
+    width: 100vw;
+}
+
+#banner img {
+    width: 100%;
+    height: 300px; /* Or whatever height you want the banner to be */
+    object-fit: cover;
+    object-position: center;
 }
 
 #main-container{
+    position: relative;
+    z-index: 10;
+
     display: flex;
     flex-wrap: wrap;
 
     margin: 0 auto;
 
-    max-width: 600px;
-    width: 90%;
+    margin-top: -100px;
+
+    max-width: 500px;
+    width: 80vw;
 
     padding: 30px;
+
+    background-color: white;
 
 
     border: 2px solid black;
