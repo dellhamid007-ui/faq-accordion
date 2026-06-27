@@ -19,12 +19,114 @@
 
 body{
     font-family: 'WorkSans';
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    background-color: #f3ebfa;
+}
+
+h1{
+    display: block;
+    width: 100%;
+}
+
+h1, .questions{
+    color: #26073d;
+}
+
+
+.questions{
+    font-size: 0.89rem;
+    margin: 10px 0;
+    padding: 0;
+
+
+    display: flex;
+}
+
+.answer{
+    color: #85788f;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 15px;
+
+    transition: all 0.4s ease-out;
+}
+
+.answer.open{
+    max-height: 200px;
+    opacity: 1;
+
+    margin-top: -20px;
+
+    padding: 15px 15px;
+}
+
+.faq-btn{
+
+    border: none;
+
+    border-radius: 50%;
+
+    min-width: 24px;
+    min-height: 24px;
+
+    font-size: 1.2em;
+
+    transition: all 0.3s ease;
+}
+
+.faq-btn:hover{
+    transform: scale(1.05);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.inactive{
+    background-color: #d752ff;
+
+}
+
+.inactive::after{
+    content: "+";
+
+
+    color: white;
+}
+
+
+.active{
+    background-color: #520569;
+}
+
+.active::after{
+    content: "-";
+
+    color: white;
+}
+
+.faq-item{
+    display: flex !important;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+
+
 }
 
 
 #banner {
     display: block;
-    width: 100vw;
+    width: 100%;
 }
 
 #banner img {
@@ -41,19 +143,28 @@ body{
     display: flex;
     flex-wrap: wrap;
 
-    margin: 0 auto;
+    margin: -100px auto 0 auto;
 
-    margin-top: -100px;
 
-    max-width: 500px;
-    width: 80vw;
+    max-width: 700px;
+    width: 80%;
 
-    padding: 30px;
+    padding: 25px;
 
     background-color: white;
 
 
-    border: 2px solid black;
+
+    box-sizing: border-box;
+
+    border-radius: 15px;
+
+    
 }
 
+
+
+footer{
+    margin-top: 100px;
+}
 
